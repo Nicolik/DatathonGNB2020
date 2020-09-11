@@ -45,8 +45,8 @@ show_metrics(precision, recall, prc_auc, roc_auc)
 # --------------------------#
 #  Test  Dataset Dataframe  #
 # --------------------------#
-# Precision  : 0.667
-# Recall     : 0.663
-# Min(P,R)   : 0.663
-# AUPRC      : 0.745
-# AUROC      : 0.950
+# Precision  : 0.565
+# Recall     : 0.567
+# Min(P,R)   : 0.565
+# AUPRC      : 0.550
+# AUROC      : 0.866
