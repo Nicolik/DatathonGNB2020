@@ -29,6 +29,7 @@ At first, some feature engineering has been performed on the dataset:
 - features with more than 80% of NaNs have been removed;
 - missing values have been imputed with a KNN algorithm;
 - features have been scaled to a fixed interval.
+
 The developed model consists in a weighted ensemble of 5 different simpler models, that are Logistic Regression, Support Vector 
 Machine with RBF Kernel, Random Forests, Ada Boost and Multi Layer Perceptron. The classification threshold was computed by
 maximizing the most important metric of the competition, i.e. the minimum of Sensitivity and Precision.
