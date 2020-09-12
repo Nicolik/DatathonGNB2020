@@ -199,16 +199,14 @@ if do_save:
 #%%
 do_pi = input('Do you want to compute Permutation Importance? (y/n)')
 if do_pi == 'y':
-    import eli5
     from eli5.sklearn import PermutationImportance
 
     perm = PermutationImportance(clf_final, random_state=1).fit(X_new, y)
-    eli5.show_weights(perm, feature_names=X_new.columns.tolist())
 
     results_0 = perm.results_[0]
 
     results_mean = np.zeros(results_0.shape)
-    results_std = np.std(results_0.shape)
+    results_std  = np.zeros(results_0.shape)
 
     perm_means = np.mean(perm.results_, axis=0)
     perm_stds  = np.std (perm.results_, axis=0)
